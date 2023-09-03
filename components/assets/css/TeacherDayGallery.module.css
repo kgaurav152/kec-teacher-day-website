@@ -1,0 +1,168 @@
+/* TeacherDayGallery.module.css */
+.taphover>img {
+    aspect-ratio: 2;
+    object-fit: contain;
+    width: 300px !important;
+}
+
+.platforms {
+    background: transparent;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    /* position: absolute; */
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.platforms>.slideTrack {
+    display: flex;
+    width: calc(200px * 32);
+    top: 30%;
+    position: relative;
+    height: 180px;
+}
+
+#s1 {
+    height: 170px;
+}
+
+.platforms>a.taphover {
+    height: 100%;
+    width: 200px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 50px;
+}
+
+
+@media (max-width: 800px) {
+    .platforms>a.taphover {
+        margin: 0 80px;
+    }
+}
+
+.platforms>a.taphover:hover,
+.hover {
+    transform: scale(1.1);
+    opacity: 1 !important;
+}
+
+.platforms>a.taphover>img {
+    position: relative;
+    width: 200px;
+    height: auto;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px) {
+    body>.platforms {
+        bottom: -30px;
+    }
+
+    body>.slider>.slideTrack {
+        width: calc(150px * 32);
+    }
+
+    body>.platforms>a.taphover,
+    .platforms>a.taphover>img {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body>.platforms {
+        bottom: -70px;
+    }
+
+    body>.slider>.slideTrack {
+        width: calc(120px * 26);
+    }
+
+    body>.platforms>a.taphover,
+    .platforms a.taphover img {
+        width: 170px;
+    }
+}
+
+.copy_write_con {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head_title {
+    font-size: 33px;
+    font-weight: 500;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, rgb(100, 227, 255), rgb(190, 124, 255), rgb(255, 216, 118), rgb(45, 126, 249));
+    -webkit-background-clip: text;
+}
+
+@media (max-width: 912px) {
+    .head_title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 769px) {
+    .head_title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 470px) {
+    .head_title {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 443px) {
+    .head_title {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 366px) {
+    .head_title {
+        font-size: 15px;
+    }
+}
+
+.coc {
+    font-size: 23px;
+    color: white;
+}
+
+@media (max-width: 470px) {
+    .coc {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 769px) {
+    .coc {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 912px) {
+    .coc {
+        font-size: 19px;
+    }
+}
+
+.coc>a {
+    color: #ff206e;
+    text-decoration: none;
+}
+
+.coc>a:hover {
+    color: #20ffa2;
+}
+
+/* Add any other styles you need for this component */
