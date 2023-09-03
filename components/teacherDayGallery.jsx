@@ -83,7 +83,7 @@ useEffect(() => {
     <section id="about"  className="pt-4">
       <div className={Styles.head_title} data-aos="fade-up">
           <h3 className={Styles.copy_write_con}>
-            <span>Last Year's Teacher's Day Highlights</span>
+            <span>Last Year&apos;s Teacher&apos;s Day Highlights</span>
           </h3>
       </div>
 
