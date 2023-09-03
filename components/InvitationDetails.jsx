@@ -68,8 +68,6 @@ const InvitationDetails = ({ invitee, venue, date, time, timeDifference, ...prop
       
       <h2 className={Styles.name_title}>{displayName}</h2>
        
-        {/* Other details like venue, date, time */}
-        
         <p className="flex flex-col text-xl align-items-center justify-content-center text-center p-8 mt-4 text-cyan-300 drop-shadow-md">
         In recognition of your exceptional dedication, guidance, and unwavering support, we cordially invite you to the Teacher&apos;s Day Celebration.
         Your remarkable contributions have shaped countless minds and inspired a generation of learners.

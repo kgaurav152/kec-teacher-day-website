@@ -4,6 +4,7 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 import InvitationDetails from '@/components/InvitationDetails';
 import HeroPage from '@/components/heroPage';
+import WrongRoute from '@/components/wrongRoute';
 
 const InvitationPage = () => {
   const pathname = usePathname();
@@ -199,7 +200,7 @@ const InvitationPage = () => {
         />
         </React.Fragment>
       ) : (
-        <p>We&apos;re excited to celebrate with our invited guests. If you have any questions, please feel free to reach out.</p>          
+        <WrongRoute />         
       )}
     </div>
   );
