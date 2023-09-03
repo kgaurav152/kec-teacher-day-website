@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 import TeacherDayGallery from "@/components/teacherDayGallery";
+import Styles from '@/components/assets/css/TeacherDayGallery.module.css';
 
 const InvitationDetails = ({ invitee, venue, date, time, timeDifference, ...props }) => {
   
@@ -53,18 +54,20 @@ const InvitationDetails = ({ invitee, venue, date, time, timeDifference, ...prop
     return (
       <React.Fragment>
       <div className="@apply text-[clamp(1rem,0.95rem_+_0.25vw,1.25rem)] leading-[1.6] bg-[1760px_852px bg-cover bg-no-repeat bg-fixed m-0 bg-[url('/dot-stars.svg')] bg-[#19191f] flex flex-col align-items-center" style = {{backgroundPosition: '50% 28'}}>
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-          <h1>Welcome, {displayName}!</h1>
-        </motion.div>
-        <div className="frame-animation mt-4">
-          <Image
-            src={imageUrl || '/default-image.jpg'}
-            alt={`${displayName}&apos;s Picture`}
-            width={300}
-            height={200}
-          />
-        </div>
-        <div className="flex flex-col md:flex-row button-container-div p-3 gap-4 md:gap-0">
+        <div className="frame-animation mt-4 flex justify-center items-center">
+          <div className="relative">
+            <div className="absolute top-0 left-0 w-full h-full border-4 border-[#e1aeb5] animate-pulse"></div>
+            <Image
+              src={imageUrl || '/default-image.jpg'}
+              alt={`${displayName}'s Picture`}
+              width={300}
+              height={200}
+            />
+          </div>
+      </div>
+      
+      <h2 className={Styles.name_title}>{displayName}</h2>
+        <div className="flex flex-col justify-center md:flex-row button-container-div p-3 gap-4 mt-2 md:gap-0">
         {mapUrl && (
         <Link className={cn(buttonVariants({ variant: "destructive" }), "mr-4 md:mr-10")} href={mapUrl} target="_blank">Direction to Venue</Link>
         )}
@@ -75,13 +78,15 @@ const InvitationDetails = ({ invitee, venue, date, time, timeDifference, ...prop
         )}
         </div>
         {/* Other details like venue, date, time */}
-        <p className="flex flex-col align-items-center justify-content-center">
+        
+        <p className="flex flex-col text-xl align-items-center justify-content-center text-center p-8 mt-4">
         In recognition of your exceptional dedication, guidance, and unwavering support, we cordially invite you to the Teacher&apos;s Day Celebration.
         Your remarkable contributions have shaped countless minds and inspired a generation of learners.
         </p>
         <p>Venue: {venue}</p>
         <p>Date: {date}</p>
         <p>Time: {time}</p>
+        
         <div className="bg-gray-200 w-3/4 md:w-1/2 lg:w-1/4 p-4 rounded-lg text-center self-center text-gray-800">
           <div className="grid grid-cols-2">
             <div className="bg-gradient-to-r from-red-500 to-red-700 p-10 text-white aspect-1">

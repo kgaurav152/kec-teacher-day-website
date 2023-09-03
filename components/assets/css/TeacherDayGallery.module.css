@@ -95,6 +95,17 @@
     justify-content: center;
 }
 
+.name_title {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, rgb(100, 227, 255), rgb(190, 124, 255), rgb(255, 216, 118), rgb(45, 126, 249));
+    -webkit-background-clip: text;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
 .head_title {
     font-size: 33px;
     font-weight: 500;
