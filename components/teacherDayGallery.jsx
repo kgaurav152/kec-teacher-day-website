@@ -170,9 +170,9 @@ useEffect(() => {
     Made with 💙 by C.S.E 2K21 using nextJs
     </div>
     <br />
-    <div className={Styles.coc}>  <a href="https://github.com/kgaurav152/" target="_blank"> Visit Repository </a> | <a href="https://linktr.ee/kgaurav152" target="_blank">About Dev</a>  </div>
+    <div className={Styles.coc}>  <a href="https://github.com/kgaurav152/kec-teacher-day-website/" target="_blank"> Visit Repository </a> | <a href="https://linktr.ee/kgaurav152" target="_blank">About Dev</a>  </div>
     <br />
-    <div className={Styles.coc}>Copyright © C.S.E 2K21, 2023</div>
+    <div className={Styles.coc}>Copyright © C.S.E 2K21</div>
 
     </section>
 

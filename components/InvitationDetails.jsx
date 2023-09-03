@@ -67,7 +67,17 @@ const InvitationDetails = ({ invitee, venue, date, time, timeDifference, ...prop
       </div>
       
       <h2 className={Styles.name_title}>{displayName}</h2>
-        <div className="flex flex-col justify-center md:flex-row button-container-div p-3 gap-4 mt-2 md:gap-0">
+       
+        {/* Other details like venue, date, time */}
+        
+        <p className="flex flex-col text-xl align-items-center justify-content-center text-center p-8 mt-4 text-cyan-300 drop-shadow-md">
+        In recognition of your exceptional dedication, guidance, and unwavering support, we cordially invite you to the Teacher&apos;s Day Celebration.
+        Your remarkable contributions have shaped countless minds and inspired a generation of learners.
+        </p>
+        <p className="text-lg p-4 mt-2"><span className="text-red-500">Venue: </span>{venue}</p>
+        <p className="text-lg p-4"><span className="text-red-500">Date: </span>{date}</p>
+        <p className="text-lg p-4 mb-2"><span className="text-red-500">Time: </span> {time}</p>
+        <div className="flex flex-col justify-center md:flex-row button-container-div p-3 gap-4 mt-2 mb-2 md:gap-0">
         {mapUrl && (
         <Link className={cn(buttonVariants({ variant: "destructive" }), "mr-4 md:mr-10")} href={mapUrl} target="_blank">Direction to Venue</Link>
         )}
@@ -77,16 +87,6 @@ const InvitationDetails = ({ invitee, venue, date, time, timeDifference, ...prop
           </Link>
         )}
         </div>
-        {/* Other details like venue, date, time */}
-        
-        <p className="flex flex-col text-xl align-items-center justify-content-center text-center p-8 mt-4">
-        In recognition of your exceptional dedication, guidance, and unwavering support, we cordially invite you to the Teacher&apos;s Day Celebration.
-        Your remarkable contributions have shaped countless minds and inspired a generation of learners.
-        </p>
-        <p>Venue: {venue}</p>
-        <p>Date: {date}</p>
-        <p>Time: {time}</p>
-        
         <div className="bg-gray-200 w-3/4 md:w-1/2 lg:w-1/4 p-4 rounded-lg text-center self-center text-gray-800">
           <div className="grid grid-cols-2">
             <div className="bg-gradient-to-r from-red-500 to-red-700 p-10 text-white aspect-1">
