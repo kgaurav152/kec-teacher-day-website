@@ -59,7 +59,7 @@ const InvitationDetails = ({ invitee, venue, date, time, timeDifference, ...prop
         <div className="frame-animation mt-4">
           <Image
             src={imageUrl || '/default-image.jpg'}
-            alt={`${displayName}'s Picture`}
+            alt={`${displayName}&apos;s Picture`}
             width={300}
             height={200}
           />
@@ -76,7 +76,7 @@ const InvitationDetails = ({ invitee, venue, date, time, timeDifference, ...prop
         </div>
         {/* Other details like venue, date, time */}
         <p className="flex flex-col align-items-center justify-content-center">
-        In recognition of your exceptional dedication, guidance, and unwavering support, we cordially invite you to the Teacher's Day Celebration.
+        In recognition of your exceptional dedication, guidance, and unwavering support, we cordially invite you to the Teacher&apos;s Day Celebration.
         Your remarkable contributions have shaped countless minds and inspired a generation of learners.
         </p>
         <p>Venue: {venue}</p>

@@ -199,7 +199,7 @@ const InvitationPage = () => {
         />
         </React.Fragment>
       ) : (
-        <p>We're excited to celebrate with our invited guests. If you have any questions, please feel free to reach out.</p>          
+        <p>We&apos;re excited to celebrate with our invited guests. If you have any questions, please feel free to reach out.</p>          
       )}
     </div>
   );
