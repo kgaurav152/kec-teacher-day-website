@@ -1,10 +1,15 @@
 "use client"
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import InvitationDetails from '@/components/InvitationDetails';
 import HeroPage from '@/components/heroPage';
 
 const InvitationPage = () => {
+  const pathname = usePathname();
+
+  const parts = pathname.split('/');
+  const name = parts[parts.length - 1];
 
   const invitees = [
     {
@@ -170,6 +175,7 @@ const InvitationPage = () => {
   const targetDate = new Date('2023-09-05T13:00:00'); // September 5, 2023, 13:00
   const currentTime = new Date();
   const timeDifference = targetDate - currentTime;
+
 
 //part for extracting all invitee name in an array
 //   const invt=[];
