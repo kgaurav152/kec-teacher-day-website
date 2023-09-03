@@ -1,17 +1,10 @@
 "use client"
 
 import React from 'react';
-import { usePathname } from 'next/navigation';
 import InvitationDetails from '@/components/InvitationDetails';
 import HeroPage from '@/components/heroPage';
 
 const InvitationPage = () => {
-  const pathname = usePathname();
-
-  const parts = pathname.split('/');
-  // const name = parts[parts.length - 1];
-  const name = parts[parts.length - 1];
-//  console.log(name)
 
   const invitees = [
     {
@@ -142,7 +135,7 @@ const InvitationPage = () => {
     },
     {
         name:'anj',
-        displayName: 'Anjali Kumari',
+        displayName: 'Ms. Anjali Kumari',
         addDetail:'Department of Computer Science & Engineering',
         imageUrl: '/anjalimaam.png',
         pdfUrl: '/anjalimaaminvitation.pdf',
@@ -171,13 +164,14 @@ const InvitationPage = () => {
   ];
 
   const invitee = invitees.find(invitee => invitee.name === name);
-  const venue = 'Room No. 202, Academic Building';
+  const venue = 'Room No. 205, Academic Building';
   const date = '5th September 2023';
   const time = '13:00 - 15:00';
   const targetDate = new Date('2023-09-05T13:00:00'); // September 5, 2023, 13:00
   const currentTime = new Date();
   const timeDifference = targetDate - currentTime;
 
+//part for extracting all invitee name in an array
 //   const invt=[];
 // for (let i=0; i<(invitees.length);i++){
 //    invt[i]=invitees[i].displayName 
