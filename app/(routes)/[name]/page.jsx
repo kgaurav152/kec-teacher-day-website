@@ -129,14 +129,14 @@ const InvitationPage = () => {
         name:'ak',
         displayName: 'Prof. Ajay Kumar',
         addDetail:'Department of Mechanical Engineering',
-        imageUrl: '/ajay.png',
+        imageUrl: '/ajaysir.png',
         pdfUrl: '/ajaysirinvitation.pdf',
     },
     {
         name:'mk',
         displayName: 'Md. Maksood Alam',
         addDetail:'Department of Electrical & Electronics Engineering',
-        imageUrl: '/maksoodji.png',
+        imageUrl: '/maksoodsir.png',
         pdfUrl: '/maksoodsirinvitation.pdf',
     },
     {
