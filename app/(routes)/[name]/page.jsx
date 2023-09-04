@@ -133,6 +133,13 @@ const InvitationPage = () => {
         pdfUrl: '/ajaysirinvitation.pdf',
     },
     {
+        name:'sk',
+        displayName: 'Prof. Suman Kumar',
+        addDetail:'Department of Mechanical Engineering',
+        imageUrl: '/sumansir.png',
+        pdfUrl: '/sumansirinvitation.pdf',
+    },
+    {
         name:'mk',
         displayName: 'Md. Maksood Alam',
         addDetail:'Department of Electrical & Electronics Engineering',
