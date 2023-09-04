@@ -129,14 +129,21 @@ const InvitationPage = () => {
         name:'ak',
         displayName: 'Prof. Ajay Kumar',
         addDetail:'Department of Mechanical Engineering',
-        imageUrl: '/ajay.png',
+        imageUrl: '/ajaysir.png',
         pdfUrl: '/ajaysirinvitation.pdf',
+    },
+    {
+        name:'sk',
+        displayName: 'Prof. Suman Kumar',
+        addDetail:'Department of Mechanical Engineering',
+        imageUrl: '/sumansir.png',
+        pdfUrl: '/sumansirinvitation.pdf',
     },
     {
         name:'mk',
         displayName: 'Md. Maksood Alam',
         addDetail:'Department of Electrical & Electronics Engineering',
-        imageUrl: '/maksoodji.png',
+        imageUrl: '/maksoodsir.png',
         pdfUrl: '/maksoodsirinvitation.pdf',
     },
     {
@@ -165,6 +172,7 @@ const InvitationPage = () => {
     // Dr. S.N. Roy 
     // Prof. Swati Kumari
     // Prof. Ajay Kumar
+    // Prof. Suman Kumar
     // Maksood
     // Anjali
   ];
