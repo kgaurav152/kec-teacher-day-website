@@ -18,7 +18,7 @@ const HeroPage = () => {
         }}
       >
         {/* ======= Hero Section ======= */}
-        <section id="hero" className={styles.hero}>
+        <section id="hero" className="${styles.hero} flex items-center">
           <div className={styles.container} data-aos="zoom-out" data-aos-delay={100}>
             <h6 style={{ paddingTop: 250 }} />
             <div className={styles.logoimg}>
